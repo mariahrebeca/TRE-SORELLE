@@ -1,0 +1,417 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="author" content="Remy">
+
+    <title>Tre Sorelle - Home</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="48x48" href="~/assets/img/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="~/assets/css/bootstrap.min.css" type="text/css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="~/assets/css/font-awesome.min.css" type="text/css">
+    <!-- Iocn -->
+    <link rel="stylesheet" href="~/assets/fonts/iconmoon.css" type="text/css">
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="~/assets/css/main.css" type="text/css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="~/assets/extras/animate.css" type="text/css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="~/assets/extras/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="~/assets/extras/owl.theme.css" type="text/css">
+    <link rel="stylesheet" href="~/assets/extras/pikaday.css" type="text/css">
+    <!-- Responsive CSS Styles -->
+    <link rel="stylesheet" href="~/assets/css/responsive.css" type="text/css">
+    <!-- Slicknav js -->
+    <link rel="stylesheet" href="~/assets/css/slicknav.css" type="text/css">
+
+
+
+</head>
+
+<body>
+    <!-- Header Section Start -->
+    <header id="header-wrap">
+        <!-- Header Logo and Menu Start -->
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation" data-spy="affix" data-offset-top="50">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- start Toggle Nav For Mobiles -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a asp-action="Index" asp-controller="Home" class="navbar-brand"><img src="~/assets/img/logo.png" alt=""></a>
+                </div>
+
+                <!--  Start Navigation-->
+                <div class="navbar-collapse collapse" id="navigation">
+                    <!-- Top Search Start -->
+                    <ul class="right cart-search">
+                        <li class="has-form">
+                            <div id="top-search">
+                                <div class="header-search-wrap">
+                                    <div class="dropdown header-search">
+                                        <a href="#" id="search-button" class="dropdown-toggle" data-toggle="dropdown"
+                                            role="button">
+                                            <i class="icon-search"></i>
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="Search-button">
+                                            <form action="" class="td-search-form" method="get" role="search">
+                                                <div class="head-form-search">
+                                                    <input id="td-header-search" class="form-control" type="text"
+                                                        autocomplete="off" name="s" value="" placeholder="Search">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="cart">
+                            <a href="#">
+                                <i class="fa fa-shopping-cart"></i>
+                                <span class="cart-count">0</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- Top Search End -->
+
+                    <!-- Start Navigation List -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="active" asp-action="Index" asp-controller="Home">Home</a>
+                            <ul class="dropdown">
+                            </ul>
+                        </li>
+                        <li><a href="menu.html">Cardápio</a></li>
+                        <li><a href="#">Saiba Mais</a>
+                            <ul class="dropdown">
+                                <li><a asp-controller="Home" asp-action="Quem Somos">Quem Somos</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Mobile Menu Start -->
+                <ul class="wpb-mobile-menu">
+                    <li><a class="active" asp-action="Index" asp-controller="Home">Home</a>
+                    </li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="#">Features</a>
+                        <ul class="dropdown">
+                            <li><a asp-controller="Home" asp-action="Quem Somos">Quem Somos</a></li>
+                        </ul>
+                    </li>
+                    </li>
+                </ul>
+                <!-- Mobile Menu End -->
+            </div>
+        </div>
+        <!-- Header Logo and Menu End -->
+
+        <!-- Main slider Section -->
+        <div id="carousel-area">
+            <div class="touch-slider owl-carousel">
+                <div class="item">
+                    <img class="slider-img" src="~/assets/img/slider/image-1.jpg" alt="">
+                    <div class="carousel-caption">
+                        <div class="slider-content">
+                            <img src="~/assets/img/top.png" alt="">
+                            <h1>Tre Sorelle</h1>
+                            <p class="description">Gelateria especializada em Gelatos Artesanais</p>
+                            <img src="~/assets/img/bottom.png" alt="">
+                        </div>
+                        <div class="bottom-arrow">
+                            <p>Conheça nosso cardápio</p>
+                            <a href="#recipes"> <i class="fa fa-chevron-down"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="slider-img" src="~/assets/img/slider/image-2.jpg" alt="">
+                    <div class="carousel-caption">
+                        <div class="slider-content">
+                            <img src="~/assets/img/top.png" alt="">
+                            <h1>Tre Sorelle</h1>
+                            <p class="description">Nosso objetivo é levar gelato de qualidade até você!</p>
+                            <img src="~/assets/img/bottom.png" alt="">
+                        </div>
+                        <div class="bottom-arrow">
+                            <p>Conheça nosso cardápio</p>
+                            <a href="#recipes"> <i class="fa fa-chevron-down"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="slider-img" src="~/assets/img/slider/image-3.jpg" alt="">
+                    <div class="carousel-caption">
+                        <div class="slider-content">
+                            <img src="~/assets/img/top.png" alt="">
+                            <h1>Tre Sorelle</h1>
+                            <p class="description">Venha nos conhecer!</p>
+                            <img src="~/assets/img/bottom.png" alt="">
+                        </div>
+                        <div class="bottom-arrow">
+                            <p>Conheça nosso cardápio</p>
+                            <a href="#recipes"> <i class="fa fa-chevron-down"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main slider Section End -->
+
+    </header>
+    <!-- Header Section End -->
+    @RenderBody()
+    <!-- Footer Section Start -->
+    <footer>
+        <!-- Footer area Start -->
+        <div class="footer-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="widget">
+                            <h3 class="widget-title"><i class="fa fa-comments"></i> Onde estamos? </h3>
+                            <ul class="menu-useful-links">
+                                <li><i class="fa fa-home"></i> Tre Sorelle Gelateria </li>
+                                <li>71 George St.</li>
+                                <li>Barra Bonita, SP</li>
+                                <li><i class="fa fa-envelope-o"></i> hello@remyresturent.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="widget">
+                            <h3 class="widget-title"><i class="fa fa-university"></i> Branches</h3>
+                            <ul class="menu-useful-links">
+                                <li><a href="#"><i class="fa fa-circle-o"></i> New South Wales, Sydney</a></li>
+                                <li><a href="#"><i class="fa fa-circle-o"></i> Victoria, Melbourne</a></li>
+                                <li><a href="#"><i class="fa fa-circle-o"></i> Western Australia, Perth</a></li>
+                                <li><a href="#"><i class="fa fa-circle-o"></i> Northern Territory, Darwin</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="widget">
+                            <h3 class="widget-title"><i class="fa fa-clock-o"></i> Opening Hours</h3>
+                            <ul class="menu-useful-links">
+                                <li><a href="#"><i class="fa fa-cutlery"></i> Mon-Fri 10am - 12pm</a></li>
+                                <li><a href="#"><i class="fa fa-cutlery"></i> Sat-Sun 1pm - 12pm</a></li>
+                                <li><a href="#"><i class="fa fa-cutlery"></i> Cocktails 5pm - 12pm</a></li>
+                                <li><a href="#"><i class="fa fa-cutlery"></i> BBQ 1pm - 9pm</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="widget">
+                            <h3 class="widget-title"><i class="fa fa-thumbs-o-up"></i> Stay Connected</h3>
+                            <div class="social-icon">
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                <a href="#"><i class="fa fa-youtube"></i></a>
+                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                            </div>
+                            <form action="" class="subscribe-form">
+                                <input class="form-control" type="email" placeholder="Enter Your Email" value=""
+                                    name="email">
+                                <div class="sb-button">
+                                    <i class="fa fa-massage"></i>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer area End -->
+
+        <!-- Copyright Start  -->
+        <div id="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>© Copyright 2016 Remy - Designed & Developed By <a href="http://graygrids.com">GrayGrids</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Go To Top Link -->
+    <a href="#" class="back-to-top">
+        <i class="fa fa-angle-up"></i>
+    </a>
+
+    <!-- Main JS  -->
+    <script type="text/javascript" src="~/assets/js/jquery-min.js"></script>
+    <script type="text/javascript" src="~/assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="~/assets/js/jquery.parallax.js"></script>
+    <script type="text/javascript" src="~/assets/js/jquery.slicknav.js"></script>
+    <script type="text/javascript" src="~/assets/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="~/assets/js/main.js"></script>
+    <script type="text/javascript" src="~/assets/js/smooth-scroll.js"></script>
+    <script type="text/javascript" src="~/assets/js/jquery.counterup.min.js"></script>
+    <script type="text/javascript" src="~/assets/js/waypoints.min.js"></script>
+    <script type="text/javascript" src="~/assets/js/form-validator.min.js"></script>
+    <script type="text/javascript" src="~/assets/js/contact-form-script.js"></script>
+    <script type="text/javascript" src="~/assets/js/pikaday.js"></script>
+    <script>
+
+        var picker = new Pikaday(
+            {
+                field: document.getElementById('datepicker'),
+                firstDay: 1,
+                minDate: new Date(2000, 0, 1),
+                maxDate: new Date(2020, 12, 31),
+                yearRange: [2000, 2020]
+            });
+
+    </script>
+    <!-- Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.expsensor=false"></script>
+
+    <!-- Google Maps JS Only for Contact Pages -->
+    <script type="text/javascript">
+        var map;
+        var plain = new google.maps.LatLng(-37.813955, 144.967495, 15);
+        var mapCoordinates = new google.maps.LatLng(-37.813955, 144.967495, 15);
+        var markers = [];
+        var image = new google.maps.MarkerImage(
+            'assets/img/map-marker.png',
+            new google.maps.Size(50, 70),
+            new google.maps.Point(0, 0),
+            new google.maps.Point(60, 60)
+        );
+        function addMarker() {
+            markers.push(new google.maps.Marker({
+                position: plain,
+                raiseOnDrag: false,
+                icon: image,
+                map: map,
+                draggable: false
+            }));
+
+        }
+
+        function initialize() {
+            var mapOptions = {
+                backgroundColor: "#ffffff",
+                zoom: 14,
+                disableDefaultUI: true,
+                center: mapCoordinates,
+                zoomControl: false,
+                scaleControl: false,
+                scrollwheel: false,
+                disableDoubleClickZoom: true,
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                styles: [{
+                    "featureType": "landscape.natural",
+                    "elementType": "geometry.fill",
+                    "stylers": [{
+                        "color": "#ffffff"
+                    }]
+                }
+                    , {
+                    "featureType": "landscape.man_made",
+                    "stylers": [{
+                        "color": "#ffffff"
+                    }
+                        , {
+                        "visibility": "off"
+                    }
+                    ]
+                }
+                    , {
+                    "featureType": "water",
+                    "stylers": [{
+                        "color": "#80C8E5"
+                    }
+                        , {
+                        "saturation": 0
+                    }
+                    ]
+                }
+                    , {
+                    "featureType": "road.arterial",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#999999"
+                    }
+                    ]
+                }
+                    , {
+                    "elementType": "labels.text.stroke",
+                    "stylers": [{
+                        "visibility": "off"
+                    }
+                    ]
+                }
+                    , {
+                    "elementType": "labels.text",
+                    "stylers": [{
+                        "color": "#333333"
+                    }
+                    ]
+                }
+
+                    , {
+                    "featureType": "road.local",
+                    "stylers": [{
+                        "color": "#dedede"
+                    }
+                    ]
+                }
+                    , {
+                    "featureType": "road.local",
+                    "elementType": "labels.text",
+                    "stylers": [{
+                        "color": "#666666"
+                    }
+                    ]
+                }
+                    , {
+                    "featureType": "transit.station.bus",
+                    "stylers": [{
+                        "saturation": -57
+                    }
+                    ]
+                }
+                    , {
+                    "featureType": "road.highway",
+                    "elementType": "labels.icon",
+                    "stylers": [{
+                        "visibility": "off"
+                    }
+                    ]
+                }
+                    , {
+                    "featureType": "poi",
+                    "stylers": [{
+                        "visibility": "off"
+                    }
+                    ]
+                }
+
+                ]
+            };
+            map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
+            addMarker();
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+</body>
+
+</html>

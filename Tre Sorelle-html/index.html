@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">    
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="author" content="Remy">
+
+  <title>Remy - Bootstrap HTML5 Restaurant Template | Home-1</title>
+
+   <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/img/favicon.png">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css" type="text/css">
+  <!-- Iocn -->
+  <link rel="stylesheet" href="assets/fonts/iconmoon.css" type="text/css">
+  <!-- Main Styles -->
+  <link rel="stylesheet" href="assets/css/main.css" type="text/css">
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="assets/extras/animate.css" type="text/css">
+  <!-- Owl Carousel -->
+  <link rel="stylesheet" href="assets/extras/owl.carousel.css" type="text/css">
+  <link rel="stylesheet" href="assets/extras/owl.theme.css" type="text/css">
+  <link rel="stylesheet" href="assets/extras/pikaday.css" type="text/css">
+  <!-- Responsive CSS Styles -->
+  <link rel="stylesheet" href="assets/css/responsive.css" type="text/css">
+  <!-- Slicknav js -->
+  <link rel="stylesheet" href="assets/css/slicknav.css" type="text/css">
+
+  <!-- Google Maps -->
+  <style>
+    #google-map,
+    body,
+    html {
+      padding: 0;
+      height: 587px;
+      z-index: -1;
+    }
+  </style>
+  
+</head>
+<body>
+  <!-- Header Section Start -->
+  <header id="header-wrap">   	    
+    <!-- Header Logo and Menu Start -->
+		<div class="navbar navbar-default navbar-fixed-top" role="navigation" data-spy="affix" data-offset-top="50">
+			<div class="container">
+				<div class="navbar-header">
+					<!-- start Toggle Nav For Mobiles -->
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="index.html" class="navbar-brand"><img src="assets/img/logo.png" alt=""></a>
+				</div>
+				
+				<!--  Start Navigation-->
+				<div class="navbar-collapse collapse" id="navigation">	
+          <!-- Top Search Start --> 
+          <ul class="right cart-search">
+            <li class="has-form">              
+              <div id="top-search">
+                <div class="header-search-wrap">
+                  <div class="dropdown header-search">
+                    <a href="#" id="search-button" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                      <i class="icon-search"></i>
+                    </a>                
+                    <div class="dropdown-menu" aria-labelledby="Search-button">
+                      <form action="" class="td-search-form" method="get" role="search">
+                        <div class="head-form-search">
+                          <input id="td-header-search" class="form-control" type="text" autocomplete="off" name="s" value="" placeholder="Search" >
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>  
+              </div>                  
+            </li>
+            <li class="cart">
+              <a href="#">
+                <i class="fa fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+              </a>
+            </li> 
+          </ul>
+          <!-- Top Search End --> 
+                       
+					<!-- Start Navigation List --> 
+					<ul class="nav navbar-nav navbar-right">
+            <li><a class="active" href="index.html">Home</a>
+              <ul class="dropdown">
+              </ul>
+            </li>
+            <li><a href="menu.html">Menu</a></li>           
+            <li><a href="#">Features</a>
+              <ul class="dropdown">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="portfolio.html">Gallery</a></li>
+                <li><a href="team.html">Team</a></li>
+              </ul>
+            </li>
+            <li><a href="contact.html">contact</a></li>
+            <li><a href="blog.html">Blog</a>
+              <ul class="dropdown">
+                <li><a href="blog.html">Page With right sidebar</a></li>
+                <li><a href="left-sidebar.html">Page With left sidebar</a></li>
+                <li><a href="single-post.html">Blog single post</a></li>
+              </ul>
+            </li>              
+          </ul> 	                   							
+				</div>		
+
+        <!-- Mobile Menu Start -->
+        <ul class="wpb-mobile-menu">
+          <li><a class="active" href="index.html">Home</a>
+          </li>
+          <li><a href="menu.html">Menu</a></li>           
+          <li><a href="#">Features</a>
+            <ul class="dropdown">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="portfolio.html">Gallery</a></li>
+              <li><a href="team.html">Team</a></li>
+              <li><a href="404.html">404 Page</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">contact</a></li>
+          <li><a href="blog.html">Blog</a>
+            <ul class="dropdown">
+              <li><a href="blog.html">Page With right sidebar</a></li>
+              <li><a href="left-sidebar.html">Page With left sidebar</a></li>
+              <li><a href="single-post.html">Blog single post</a></li>
+            </ul>
+          </li> 
+        </ul>
+        <!-- Mobile Menu End -->		
+			</div>
+		</div>
+		<!-- Header Logo and Menu End -->
+
+    <!-- Main slider Section -->
+    <div id="carousel-area">
+      <div class="touch-slider owl-carousel">
+          <div class="item">
+            <img class="slider-img" src="assets/img/slider/image-1.jpg" alt="">
+            <div class="carousel-caption">
+              <div class="slider-content">
+                <img src="assets/img/top.png" alt="">
+                <h1>Welcome to Remy</h1>
+                <p class="description">We offer the best meals at the best value</p>
+                <img src="assets/img/bottom.png" alt="">
+              </div>
+              <div class="bottom-arrow">
+                <p>Explore recipes</p>
+                <a href="#recipes"> <i class="fa fa-chevron-down"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img class="slider-img" src="assets/img/slider/image-2.jpg" alt="">
+            <div class="carousel-caption">
+              <div class="slider-content">
+                <img src="assets/img/top.png" alt="">
+                <h1>Special Recipes</h1>
+                <p class="description">That match your unique tastes and diet preferences</p>
+                <img src="assets/img/bottom.png" alt="">
+              </div>
+              <div class="bottom-arrow">
+                <p>Explore recipes</p>
+                <a href="#recipes"> <i class="fa fa-chevron-down"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img class="slider-img" src="assets/img/slider/image-3.jpg" alt="">
+            <div class="carousel-caption">
+              <div class="slider-content">
+                <img src="assets/img/top.png" alt="">
+                <h1>Make a Reservation</h1>
+                <p class="description">We're always open call us to confirm</p>
+                <img src="assets/img/bottom.png" alt="">
+              </div>
+              <div class="bottom-arrow">
+                <p>Explore recipes</p>
+                <a href="#recipes"> <i class="fa fa-chevron-down"></i></a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <!-- Main slider Section End -->
+		
+  </header>
+  <!-- Header Section End -->
+
+  <!-- About Us Section Start -->
+  <section id="about" class="general-row">
+    <div class="container">
+      <div class="row about-wrapper">
+        <div class="col-md-6 col-sm-6 col-xs-12 text-content">
+          <div class="sce-title">
+            <h2>Our Restaurant</h2>
+            <p>We offer the best meals</p>
+          </div>
+          <div class="sce-text">
+            <p>
+              The History of Remy and Cooks gives further intimation on Mr Boulanger usual menu, stating confidently that “Boulanger served salted poultry and fresh eggs, all presented without a tablecloth on small marble tables”. Numerous commentators have also referred to the supposed restaurant owner’s eccentric habit of touting for custom outside his establishment, dressed in aristocratic fashion and brandishing a sword
+            </p>
+            <p>
+              According to Miss Spang, there is not a shred of evidence for any of it. She said: These legends just get passed on by hearsay and then spiral out of control. Her interest in Boulanger dates back to a history of food seminar in Paris in the mid-1990s
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12 left-image">
+          <div class="image">
+            <img src="assets/img/restaurant/img1.jpg" alt="">
+            <img src="assets/img/restaurant/img2.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About Us Section End -->
+
+  <!-- Receipes Section Start -->
+  <section id="recipes" class="general-row">
+    <div class="container">
+      <div class="section-title">
+        <h2>Discover Recipes</h2>
+        <p>Discover recipes that match your unique tastes and diet preferences</p>
+      </div>
+
+      <!-- Floated Images -->
+      <div class="images-left-top">
+        <img src="assets/img/img-back-top1.png" alt="">
+      </div>
+      <div class="images-right-bottom">
+        <img src="assets/img/food-plate-3.png" alt="">
+      </div>
+      
+      <!-- Tabs Section Start -->
+      <div id="tabs">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="active">
+            <a data-toggle="tab" role="tab" href="#tab1">
+              Breakfast
+            </a>
+          </li>
+          <li>
+            <a data-toggle="tab" role="tab" href="#tab2">
+              Lunch
+            </a>
+          </li>
+          <li>
+            <a data-toggle="tab" role="tab" href="#tab3">
+              Dinner
+            </a>
+          </li>
+          <li>
+            <a data-toggle="tab" role="tab" href="#tab4">
+              Lunch
+            </a>
+          </li>
+          <li>
+            <a data-toggle="tab" role="tab" href="#tab5">
+              Dessert
+            </a>
+          </li>
+        </ul>
+
+        <!-- Tab content -->
+        <div class="tab-content">
+          <div id="tab1" class="tab-pane fade in active " role="tabpanel">
+            <div class="row">
+              <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="item">
+                  <div class="img">
+                    <img src="assets/img/recipes/img-01.jpg" alt="">                      
+                  </div>
+                  <div class="details">
+                    <h3><a href="single-item.html"> Rolls And Eggs 2</a></h3>
+                    <p>Lorem ipsum dolor sit amet. sed do eiusmod tempor incididunt.</p>
+                    <a href="#" class="add-cart">Add To Cart <i class="icon-cart"></i></a>
+                  </div>
+                  <div class="price">
+                    <span>$12.5</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="item">
+                  <div class="img">
+                    <img src="assets/img/recipes/img-02.jpg" alt="">
+                  </div>
+                  <div class="details">
+                    <h3><a href="single-item.html">Fruity Cereal</a></h3>
+                    <p>Lorem ipsum dolor sit amet. sed do eiusmod tempor incididunt.</p>
+                    <a href="#" class="add-cart">Add To Cart <i class="icon-cart"></i></a>
+                  </div>
+                  <div class="price">
+                    <span>$17.5</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="item">
+                  <div class="img">
+                    <img src="assets/img/recipes/img-03.jpg" alt="">
+                  </div>
+                  <div class="details">
+                    <h3><a href="single-item.html">Chicken Alfredo</a></h3>
+                    <p>Lorem ipsum dolor sit amet. sed do eiusmod tempor incididunt.</p>
+                    <a href="#" class="add-cart">Add To Cart <i class="icon-cart"></i></a>
+                  </div>
+                  <div class="price">
+                    <span>$26.5</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="item">
+                  <div class="img">
+                    <img src="assets/img/recipes/img-04.jpg" alt="">
+                  </div>
+                  <div class="details">
+                    <h3><a href="single-item.html">Caffe Latte</a></h3>
+                    <p>Lorem ipsum dolor sit amet. sed do eiusmod tempor incididunt.</p>
+                    <a href="#" class="add-cart">Add To Cart <i class="icon-cart"></i></a>
+                  </div>
+                  <div class="price">
+                    <span>$21.5</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="item">
+                  <div class="img">
+                    <img src="assets/img/recipes/img-05.jpg" alt="">
+                  </div>
+                  <div class="details">
+                    <h3><a href="single-item.html">Swordfish Fillet</a></h3>
+                    <p>Lorem ipsum dolor sit amet. sed do eiusmod tempor incididunt.</p>
+                    <a href="#" class="add-cart">Add To Cart <i class="icon-cart"></i></a>
+                  </div>
+                  <div class="price">
+                    <span>$17.5</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="item">
+                  <div class="img">
+                    <img src="assets/img/recipes/img-06.jpg" alt="">
+                  </div>
+                  <div class="details">
+                    <h3><a href="single-item.html">Pasta With Truffle</a></h3>
+                    <p>Lorem ipsum dolor sit amet. sed do eiusmod tempor incididunt.</p>
+                    <a href="#" class="add-cart">Add To Cart <i class="icon-cart"></i></a>
+                  </div>
+                  <div class="price">
+                    <span>$12.5</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="tab2" class="tab-pane fade">
+            <div class="row">
+              <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="item">
+                  <div class="img">
+                    <img src="assets/img/recipes/img-04.jpg" alt="">
+                  </div>
+                  <div class="details">
+                    <h3><a href="single-item.html">Caffe Latte</a></h3>
+                    <p>Lorem ipsum dolor sit amet. sed do eiusmod tempor incididunt.</p>
+                    <a href="#" class="add-cart">Add To Cart <i class="icon-cart"></i></a>
+                  </div>
+                  <div class="price">
+                    <span>$29.5</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="item">
+                  <div class="img">
+                    <img src="assets/img/recipes/img-05.jpg" alt="">
+                  </div>
+                  <div class="details">
+                    <h3><a href="single-item.html">Swordfish Fillet</a></h3>
+                    <p>Lorem ipsum dolor sit amet. sed do eiusmod tempor incididunt.</p>
+                    <a href="#" class="add-cart">Add To Cart <i class="icon-cart"></i></a>
+                  </div>
+                  <div class="price">
+                    <span>$12.5</span>
+                  </div>
+                </div> 
+              </div>
+              <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="item">
+                  <div class="img">
+                    <img src="assets/img/recipes/img-03.jpg" alt="">
+                  </div>
+                  <div class="details">
+                    <h3><a href="single-item.html">Chicken Alfredo</a></h3>
+                    <p>Lorem ipsum dolor sit amet. sed do eiusmod tempor incididunt.</p>
+                    <a href="#" class="add-cart">Add To Cart <i class="icon-cart"></i></a>
+                  </div>
+                  <div class="price">
+                    <span>$17.5</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="item">
+                  <div class="img">
+                    <img src="assets/img/recipes/img-01.jpg" alt="">
+                  </div>
+                  <div class="details">
+                    <h3><a href="single-item.html"> Rolls And Eggs</a>2</h3>
+                    <p>Lorem ipsum dolor sit amet. sed do eiusmod tempor incididunt.</p>
+                    <a href="#" class="add-cart">Add To Cart <i class="icon-cart"></i></a>
+                  </div>
+                  <div class="price">
+                    <span>$25.5</span>
+                  </div>                  
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="item">
+                  <div class="img">
+                    <img src="assets/img/recipes/img-06.jpg" alt="">
+                  </div>
+                  <div class="details">
+                    <h3><a href="single-item.html">Pasta With Truffle</a></h3>
+                    <p>Lorem ipsum dolor sit amet. sed do eiusmod tempor incididunt.</p>
+                    <a href="#" class="add-cart">Add To Cart <i class="icon-cart"></i></a>
+                  </div>
+                  <div class="price">
+                    <span>$12.5</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="item">
+                  <div class="img">
+                    <img src="assets/img/recipes/img-02.jpg" alt="">
+                  </div>
+                  <div class="details">
+                    <h3><a href="single-item.html">Fruity Cereal</a></h3>
+                    <p>Lorem ipsum dolor sit amet. sed do eiusmod tempor incididunt.</p>
+                    <a href="#" class="add-cart">Add To Cart <i class="icon-cart"></i></a>
+                  </div>
+                  <div class="price">
+                    <span>$19.5</span>
+                  </div>
+                </div>                               
+              </div>
+            </div>
+          </div>
+          <div id="tab3" class="tab-pane fade">
+           <div class="row">
+              <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="item">
+                  <div class="img">
+                    <img src="assets/img/recipes/img-01.jpg" alt="">
+                  </div>
+                  <div class="details">
+                    <h3><a href="single-item.html"> Rolls And Eggs</a>2</h3>
+                    <p>Lorem ipsum dolor sit amet. sed do eiusmod tempor incididunt.</p>
+                    <a href="#" class="add-cart">Add To Cart <i class="icon-cart"></i></a>
+                  </div>
+                  <div class="price">
+                    <span>$34.5</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="item">
+                  <div class="img">
+                    <img src="assets/img/recipes/img-02.jpg" alt="">
+                  </div>
+                  <div class="details">
+                    <h3><a href="single-item.html">Fruity Cereal</a></h3>
+                    <p>Lorem ipsum dolor sit amet. sed do eiusmod tempor incididunt.</p>
+                    <a href="#" class="add-cart">Add To Cart <i class="icon-cart"></i></a>
+                  </div>
+                  <div class="price">
+                    <span>$28.5</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="item">
+                  <div class="img">
+                    <img src="assets/img/recipes/img-03.jpg" alt="">
+                  </div>
+                  <div class="details">
+                    <h3><a href="single-item.html">Chicken Alfredo</a></h3>
+                    <p>Lorem ipsum dolor sit amet. sed do eiusmod tempor incididunt.</p>
+                    <a href="#" class="add-cart">Add To Cart <i class="icon-cart"></i></a>
+                  </div>
+                  <div class="price">
+                    <span>$36.5</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="item">
+                  <div class="img">
+                    <img src="assets/img/recipes/img-04.jpg" alt="">
+                  </div>
+                  <div class="details">
+                    <h3><a href="single-item.html">Caffe Latte</a></h3>
+                    <p>Lorem ipsum dolor sit amet. sed do eiusmod tempor incididunt.</p>
+                    <a href="#" class="add-cart">Add To Cart <i class="icon-cart"></i></a>
+                  </div>
+                  <div class="price">
+                    <span>$14.5</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="item">
+                  <div class="img">
+                    <img src="assets/img/recipes/img-05.jpg" alt="">
+                  </div>
+                  <div class="details">
+                    <h3><a href="single-item.html">Swordfish Fillet</a></h3>
+                    <p>Lorem ipsum dolor sit amet. sed do eiusmod tempor incididunt.</p>
+                    <a href="#" class="add-cart">Add To Cart <i class="icon-cart"></i></a>
+                  </div>
+                  <div class="price">
+                    <span>$32.5</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="item">
+                  <div class="img">
+                    <img src="assets/img/recipes/img-06.jpg" alt="">
+                  </div>
+                  <div class="details">
+                    <h3><a href="single-item.html">Pasta With Truffle</a></h3>
+                    <p>Lorem ipsum dolor sit amet. sed do eiusmod tempor incididunt.</p>
+                    <a href="#" class="add-cart">Add To Cart <i class="icon-cart"></i></a>
+                  </div>
+                  <div class="price">
+                    <span>$24.5</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="tab4" class="tab-pane fade">
+           <div class="row">
+              <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="item">
+                  <div class="img">
+                    <img src="assets/img/recipes/img-04.jpg" alt="">
+                  </div>
+                  <div class="details">
+                    <h3><a href="single-item.html">Caffe Latte</a></h3>
+                    <p>Lorem ipsum dolor sit amet. sed do eiusmod tempor incididunt.</p>
+                    <a href="#" class="add-cart">Add To Cart <i class="icon-cart"></i></a>
+                  </div>
+                  <div class="price">
+                    <span>$29.5</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="item">
+                  <div class="img">
+                    <img src="assets/img/recipes/img-05.jpg" alt="">
+                  </div>
+                  <div class="details">
+                    <h3><a href="single-item.html">Swordfish Fillet</a></h3>
+                    <p>Lorem ipsum dolor sit amet. sed do eiusmod tempor incididunt.</p>
+                    <a href="#" class="add-cart">Add To Cart <i class="icon-cart"></i></a>
+                  </div>
+                  <div class="price">
+                    <span>$12.5</span>
+                  </div>
+                </div> 
+              </div>
+              <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="item">
+                  <div class="img">
+                    <img src="assets/img/recipes/img-03.jpg" alt="">
+                  </div>
+                  <div class="details">
+                    <h3><a href="single-item.html">Chicken Alfredo</a></h3>
+                    <p>Lorem ipsum dolor sit amet. sed do eiusmod tempor incididunt.</p>
+                    <a href="#" class="add-cart">Add To Cart <i class="icon-cart"></i></a>
+                  </div>
+                  <div class="price">
+                    <span>$17.5</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="item">
+                  <div class="img">
+                    <img src="assets/img/recipes/img-01.jpg" alt="">
+                  </div>
+                  <div class="details">
+                    <h3><a href="single-item.html"> Rolls And Eggs</a>2</h3>
+                    <p>Lorem ipsum dolor sit amet. sed do eiusmod tempor incididunt.</p>
+                    <a href="#" class="add-cart">Add To Cart <i class="icon-cart"></i></a>
+                  </div>
+                  <div class="price">
+                    <span>$25.5</span>
+                  </div>                  
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="item">
+                  <div class="img">
+                    <img src="assets/img/recipes/img-06.jpg" alt="">
+                  </div>
+                  <div class="details">
+                    <h3><a href="single-item.html">Pasta With Truffle</a></h3>
+                    <p>Lorem ipsum dolor sit amet. sed do eiusmod tempor incididunt.</p>
+                    <a href="#" class="add-cart">Add To Cart <i class="icon-cart"></i></a>
+                  </div>
+                  <div class="price">
+                    <span>$11.5</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="item">
+                  <div class="img">
+                    <img src="assets/img/recipes/img-02.jpg" alt="">
+                  </div>
+                  <div class="details">
+                    <h3><a href="single-item.html">Fruity Cereal</a></h3>
+                    <p>Lorem ipsum dolor sit amet. sed do eiusmod tempor incididunt.</p>
+                    <a href="#" class="add-cart">Add To Cart <i class="icon-cart"></i></a>
+                  </div>
+                  <div class="price">
+                    <span>$19.5</span>
+                  </div>
+                </div>                               
+              </div>
+            </div>
+          </div>
+          <div id="tab5" class="tab-pane fade">
+           <div class="row">
+              <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="item">
+                  <div class="img">
+                    <img src="assets/img/recipes/img-01.jpg" alt="">
+                  </div>
+                  <div class="details">
+                    <h3><a href="single-item.html"> Rolls And Eggs</a>2</h3>
+                    <p>Lorem ipsum dolor sit amet. sed do eiusmod tempor incididunt.</p>
+                    <a href="#" class="add-cart">Add To Cart <i class="icon-cart"></i></a>
+                  </div>
+                  <div class="price">
+                    <span>$12.5</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="item">
+                  <div class="img">
+                    <img src="assets/img/recipes/img-02.jpg" alt="">
+                  </div>
+                  <div class="details">
+                    <h3><a href="single-item.html">Fruity Cereal</a></h3>
+                    <p>Lorem ipsum dolor sit amet. sed do eiusmod tempor incididunt.</p>
+                    <a href="#" class="add-cart">Add To Cart <i class="icon-cart"></i></a>
+                  </div>
+                  <div class="price">
+                    <span>$26.5</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="item">
+                  <div class="img">
+                    <img src="assets/img/recipes/img-03.jpg" alt="">
+                  </div>
+                  <div class="details">
+                    <h3><a href="single-item.html">Chicken Alfredo</a></h3>
+                    <p>Lorem ipsum dolor sit amet. sed do eiusmod tempor incididunt.</p>
+                    <a href="#" class="add-cart">Add To Cart <i class="icon-cart"></i></a>
+                  </div>
+                  <div class="price">
+                    <span>$17.5</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="item">
+                  <div class="img">
+                    <img src="assets/img/recipes/img-04.jpg" alt="">
+                  </div>
+                  <div class="details">
+                    <h3><a href="single-item.html">Caffe Latte</a></h3>
+                    <p>Lorem ipsum dolor sit amet. sed do eiusmod tempor incididunt.</p>
+                    <a href="#" class="add-cart">Add To Cart <i class="icon-cart"></i></a>
+                  </div>
+                  <div class="price">
+                    <span>$30.5</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="item">
+                  <div class="img">
+                    <img src="assets/img/recipes/img-05.jpg" alt="">
+                  </div>
+                  <div class="details">
+                    <h3><a href="single-item.html">Swordfish Fillet</a></h3>
+                    <p>Lorem ipsum dolor sit amet. sed do eiusmod tempor incididunt.</p>
+                    <a href="#" class="add-cart">Add To Cart <i class="icon-cart"></i></a>
+                  </div>
+                  <div class="price">
+                    <span>$15.5</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="item">
+                  <div class="img">
+                    <img src="assets/img/recipes/img-06.jpg" alt="">
+                  </div>
+                  <div class="details">
+                    <h3><a href="single-item.html">Pasta With Truffle</a></h3>
+                    <p>Lorem ipsum dolor sit amet. sed do eiusmod tempor incididunt.</p>
+                    <a href="#" class="add-cart">Add To Cart <i class="icon-cart"></i></a>
+                  </div>
+                  <div class="price">
+                    <span>$27.5</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Tab content End -->   
+      </div>
+      <!-- Tabs Section End -->
+    </div>
+  </section>
+  <!-- Receipes Section End -->
+
+  <!-- Special Section Start -->
+  <section id="special" class="general-row"> 
+    <div class="special-recipes">
+      <div class="container">
+        <div class="row">         
+            <div class="auto-container clearfix">
+              <div class="section-title">
+                <h2>Special Recipes</h2>
+                <p>Discover recipes that match your unique tastes and diet preferences</p>
+              </div>
+              
+              <div class="special-item clearfix">
+                <div class="col-md-3 col-sm-6 col-xs-12 grid-item">
+                  <figure class="image">
+                  <img src="assets/img/recipes/large-img1.jpg" alt="">
+                    <div class="overlay">
+                      <a href="single-item.html" class="icon">
+                        <i class="fa fa-link"></i>
+                      </a>
+                    </div>
+                  </figure>                  
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 grid-item">
+                  <a href="#" class="add-cart">Add To Cart <i class="icon-cart"></i></a>
+                  <div class="info">                    
+                    <div class="price">
+                      <span>$ 12.5</span>
+                    </div>
+                    <h3><a href="#">Brunch Buffet</a></h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 grid-item">
+                  <figure class="image">
+                  <img src="assets/img/recipes/large-img2.jpg" alt="">
+                    <div class="overlay">
+                      <a href="single-item.html" class="icon">
+                        <i class="fa fa-link"></i>
+                      </a>
+                    </div>
+                  </figure>    
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 grid-item">
+                  <a href="#" class="added">Added <i class="icon-cart"></i></a>
+                  <div class="info">                    
+                    <div class="price">
+                      <span>$ 27.5</span>
+                    </div>
+                    <h3><a href="#">Brunch Buffet</a></h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...
+                    </p>
+                  </div>
+                </div>      
+                <div class="col-md-3 col-sm-6 col-xs-12 grid-item">
+                  <a href="#" class="added">Added <i class="icon-cart"></i></a>
+                  <div class="info">                    
+                    <div class="price">
+                      <span>$ 15.5</span>
+                    </div>
+                    <h3><a href="#">Brunch Buffet</a></h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...
+                    </p>
+                  </div>
+                </div>   
+                <div class="col-md-3 col-sm-6 col-xs-12 grid-item">
+                  <figure class="image">
+                  <img src="assets/img/recipes/large-img3.jpg" alt="">
+                    <div class="overlay">
+                      <a href="single-item.html" class="icon">
+                        <i class="fa fa-link"></i>
+                      </a>
+                    </div>
+                  </figure>    
+                </div>       
+                <div class="col-md-3 col-sm-6 col-xs-12 grid-item">                  
+                  <a href="#" class="add-cart">Add To Cart <i class="icon-cart"></i></a>
+                  <div class="info">                    
+                    <div class="price">
+                      <span>$ 1.5</span>
+                    </div>
+                    <h3><a href="#">Brunch Buffet</a></h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 grid-item">
+                  <figure class="image">
+                  <img src="assets/img/recipes/large-img4.jpg" alt="">
+                    <div class="overlay">
+                      <a href="single-item.html" class="icon">
+                        <i class="fa fa-link"></i>
+                      </a>
+                    </div>
+                  </figure>    
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <!-- Call To Action -->
+                <div class="cta text-center">
+                  <h1>Choose Your Favorite Recipes</h1>
+                  <h2>Discover recipes that match your unique tastes and diet preferences</h2>
+                  <a href="#" class="btn btn-common">More Recipes</a>
+                </div>
+                <!-- Call To Action End -->
+              </div>    
+            </div>      
+        </div>
+      </div>
+    </div>   
+  </section>
+  <!-- Special Section End -->
+
+  <!-- Team Section Start -->
+  <section id="team">
+    <div class="container">
+      <div class="row">
+        <div class="section-title">
+          <h2>Who Discover Recipes</h2>
+          <p>Discover recipes that match your unique tastes and diet preferences</p>
+        </div>
+        
+        <!-- Team Section Start -->
+        <div id="team">
+          <div class="team-carousel owl-carousel">
+            <div class="item">
+               <img src="assets/img/team/img1.jpg" alt="">
+               <div class="info">
+                 <h3>Brandon Cooper</h3>
+                 <p>Chief Chef</p>
+               </div>           
+            </div>   
+            <div class="item">
+               <img src="assets/img/team/img2.jpg" alt="">   
+               <div class="info">
+                 <h3>Craig Lake</h3>
+                 <p>Sous Chef</p>
+               </div>         
+            </div>  
+            <div class="item">
+               <img src="assets/img/team/img3.jpg" alt="">
+               <div class="info">
+                 <h3>Jeffrey Miller</h3>
+                 <p>Food & Beverage Controller</p>
+               </div>            
+            </div>  
+            <div class="item">
+               <img src="assets/img/team/img1.jpg" alt="">  
+               <div class="info">
+                 <h3>Steven Romo</h3>
+                 <p>Pastry Chef</p>
+               </div>          
+            </div>  
+            <div class="item">
+               <img src="assets/img/team/img2.jpg" alt="">    
+               <div class="info">
+                 <h3>Ronnie Sotelo</h3>
+                 <p>Executive Chef</p>
+               </div>        
+            </div>  
+            <div class="item">
+               <img src="assets/img/team/img3.jpg" alt="">   
+               <div class="info">
+                 <h3>Jesse Pacheco</h3>
+                 <p>Pizza Transporter</p>
+               </div>         
+            </div>           
+          </div>
+        </div>
+        <!-- Team Section End -->
+
+      </div>
+    </div>
+  </section>
+  <!-- Team Section End -->
+
+
+  <!-- Conatct Section -->
+  <div id="google-map"></div>
+
+  <!-- Feedback Form Section Start -->
+  <section id="feedback">
+    <div class="container">
+      <div class="row">
+       <div class="col-md-8 col-md-offset-2">
+          <div class="feedback text-center">
+            <div class="section-title">
+              <h2>Send Your Feedback</h2>
+              <p>We're always here to hear from you</p>
+            </div>
+
+            <!-- Start Contact Form -->
+            <form role="form" id="contactForm" class="contact-form" data-toggle="validator" class="shake">
+              <div class="form-group">
+                <div class="controls">
+                  <input type="text" id="name" class="form-control" placeholder="Name" required data-error="Please enter your name">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="controls">
+                  <input type="email" class="email form-control" id="email" placeholder="Email" required data-error="Please enter your email">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="controls">
+                  <input type="text" id="msg_subject" class="form-control" placeholder="Subject" required data-error="Please enter your message subject">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="controls">
+                  <textarea id="message" rows="7" placeholder="Massage" class="form-control" required data-error="Write your message"></textarea>
+                  <div class="help-block with-errors"></div>
+                </div>  
+              </div>
+
+              <button type="submit" id="submit" class="btn btn-common btn-sn"></i> Send Message</button>
+              <div id="msgSubmit" class="h3 text-center hidden"></div> 
+              <div class="clearfix"></div>   
+
+            </form>     
+            <!-- End Contact Form -->
+       </div>
+      </div>
+    </div>
+  </section>
+  <!-- Feedback Form Section End -->
+
+  <!-- Footer Section Start -->
+  <footer>
+  	<!-- Footer area Start -->
+  	<div class="footer-area">
+  		<div class="container">
+  			<div class="row">
+  				<div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="widget">
+              <h3 class="widget-title"><i class="fa fa-comments"></i> Contact Us</h3>
+              <ul class="menu-useful-links">
+                <li><i class="fa fa-home"></i> Remy Resturent</li>
+                <li>71 George St.</li>
+                <li>NSW, Australia</li>
+                <li><i class="fa fa-envelope-o"></i> hello@remyresturent.com</li>
+              </ul>
+            </div>
+          </div>
+  				<div class="col-md-3 col-sm-6 col-xs-12">
+  					<div class="widget">
+  						<h3 class="widget-title"><i class="fa fa-university"></i> Branches</h3>
+							<ul class="menu-useful-links">
+                <li><a href="#"><i class="fa fa-circle-o"></i> New South Wales, Sydney</a></li>
+                <li><a href="#"><i class="fa fa-circle-o"></i> Victoria, Melbourne</a></li>
+                <li><a href="#"><i class="fa fa-circle-o"></i> Western Australia, Perth</a></li>
+                <li><a href="#"><i class="fa fa-circle-o"></i> Northern Territory, Darwin</a></li>
+              </ul>
+  					</div>
+  				</div>
+  				<div class="col-md-3 col-sm-6 col-xs-12">
+  					<div class="widget">
+              <h3 class="widget-title"><i class="fa fa-clock-o"></i> Opening Hours</h3>
+              <ul class="menu-useful-links">
+                <li><a href="#"><i class="fa fa-cutlery"></i> Mon-Fri 10am - 12pm</a></li>
+                <li><a href="#"><i class="fa fa-cutlery"></i> Sat-Sun 1pm - 12pm</a></li>
+                <li><a href="#"><i class="fa fa-cutlery"></i> Cocktails 5pm - 12pm</a></li>
+                <li><a href="#"><i class="fa fa-cutlery"></i> BBQ 1pm - 9pm</a></li>
+              </ul>
+            </div>
+  				</div>
+  				<div class="col-md-3 col-sm-6 col-xs-12">
+  					<div class="widget">
+  						<h3 class="widget-title"><i class="fa fa-thumbs-o-up"></i> Stay Connected</h3>
+              <div class="social-icon">
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+                <a href="#"><i class="fa fa-google-plus"></i></a>
+              </div>
+  						<form action="" class="subscribe-form">
+  							<input class="form-control" type="email" placeholder="Enter Your Email" value="" name="email"> 
+  							<div class="sb-button">
+  								<i class="fa fa-massage"></i>
+  							</div>
+  						</form>  						
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  	<!-- Footer area End -->
+  	
+  	<!-- Copyright Start  -->
+  	<div id="copyright">
+  		<div class="container">
+  			<div class="row">
+  				<div class="col-md-12">
+  					<p>© Copyright 2016 Remy - Designed & Developed By <a href="http://graygrids.com">GrayGrids</a></p>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  	<!-- Copyright End -->
+  </footer>
+  <!-- Footer Section End -->  
+  
+  <!-- Go To Top Link -->
+  <a href="#" class="back-to-top">
+    <i class="fa fa-angle-up"></i>
+  </a> 
+  
+  <!-- Main JS  -->
+  <script type="text/javascript" src="assets/js/jquery-min.js"></script>      
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.parallax.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.slicknav.js"></script>
+  <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="assets/js/main.js"></script>
+  <script type="text/javascript" src="assets/js/smooth-scroll.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.counterup.min.js"></script>
+  <script type="text/javascript" src="assets/js/waypoints.min.js"></script>
+  <script type="text/javascript" src="assets/js/form-validator.min.js"></script>
+  <script type="text/javascript" src="assets/js/contact-form-script.js"></script>
+  <script type="text/javascript" src="assets/js/pikaday.js"></script>
+  <script>
+
+    var picker = new Pikaday(
+    {
+        field: document.getElementById('datepicker'),
+        firstDay: 1,
+        minDate: new Date(2000, 0, 1),
+        maxDate: new Date(2020, 12, 31),
+        yearRange: [2000,2020]
+    });
+
+    </script>
+  <!-- Google Maps API -->
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.expsensor=false"></script> 
+  
+  <!-- Google Maps JS Only for Contact Pages -->
+  <script type="text/javascript">
+    var map;
+    var plain = new google.maps.LatLng(-37.813955,144.967495,15);
+    var mapCoordinates = new google.maps.LatLng(-37.813955,144.967495,15);       
+    var markers = [];
+    var image = new google.maps.MarkerImage(
+      'assets/img/map-marker.png',
+      new google.maps.Size(50, 70),
+      new google.maps.Point(0, 0),
+      new google.maps.Point(60, 60)
+    );    
+    function addMarker() {
+      markers.push(new google.maps.Marker({
+        position: plain,
+        raiseOnDrag: false,
+        icon: image,
+        map: map,
+        draggable: false
+      }));
+      
+    }
+    
+    function initialize() {
+      var mapOptions = {
+        backgroundColor: "#ffffff",
+        zoom: 14,
+        disableDefaultUI: true,
+        center: mapCoordinates,
+        zoomControl: false,
+        scaleControl: false,
+        scrollwheel: false,
+        disableDoubleClickZoom: true,
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        styles: [{
+          "featureType": "landscape.natural",
+          "elementType": "geometry.fill",
+          "stylers": [{
+            "color": "#ffffff"
+          }]
+        }
+       , {
+         "featureType": "landscape.man_made",
+         "stylers": [{
+           "color": "#ffffff"
+         }
+                     , {
+                       "visibility": "off"
+                     }
+                    ]
+       }
+       , {
+         "featureType": "water",
+         "stylers": [{
+           "color": "#80C8E5"
+         }
+                     , {
+                       "saturation": 0
+                     }
+                    ]
+       }
+       , {
+         "featureType": "road.arterial",
+         "elementType": "geometry",
+         "stylers": [{
+           "color": "#999999"
+         }
+                    ]
+       }
+       , {
+         "elementType": "labels.text.stroke",
+         "stylers": [{
+           "visibility": "off"
+         }
+                    ]
+       }
+       , {
+         "elementType": "labels.text",
+         "stylers": [{
+           "color": "#333333"
+         }
+                    ]
+       }
+       
+       , {
+         "featureType": "road.local",
+         "stylers": [{
+           "color": "#dedede"
+         }
+                    ]
+       }
+       , {
+         "featureType": "road.local",
+         "elementType": "labels.text",
+         "stylers": [{
+           "color": "#666666"
+         }
+                    ]
+       }
+       , {
+         "featureType": "transit.station.bus",
+         "stylers": [{
+           "saturation": -57
+         }
+                    ]
+       }
+       , {
+         "featureType": "road.highway",
+         "elementType": "labels.icon",
+         "stylers": [{
+           "visibility": "off"
+         }
+                    ]
+       }
+       , {
+         "featureType": "poi",
+         "stylers": [{
+           "visibility": "off"
+         }
+                    ]
+       }
+       
+      ]        
+      };
+      map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
+      addMarker();      
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+  </script>
+</body>
+</html>
