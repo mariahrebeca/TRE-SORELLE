@@ -88,30 +88,15 @@
                     <!-- Start Navigation List -->
                     <ul class="nav navbar-nav navbar-right">
                         <li><a class="active" asp-action="Index" asp-controller="Home">Home</a>
-                            <ul class="dropdown">
-                            </ul>
+                            
                         </li>
-                        <li><a href="menu.html">Cardápio</a></li>
-                        <li><a href="#">Saiba Mais</a>
-                            <ul class="dropdown">
-                                <li><a asp-controller="Home" asp-action="Quem Somos">Quem Somos</a></li>
-                            </ul>
-                        </li>
+                        <li><a asp-action="Index" asp-controller="Home">Cardápio</a></li>
+                        <li><a asp-controller="Home" asp-action="Quem Somos">Quem Somos</a></li>
                     </ul>
                 </div>
 
                 <!-- Mobile Menu Start -->
-                <ul class="wpb-mobile-menu">
-                    <li><a class="active" asp-action="Index" asp-controller="Home">Home</a>
-                    </li>
-                    <li><a href="menu.html">Menu</a></li>
-                    <li><a href="#">Features</a>
-                        <ul class="dropdown">
-                            <li><a asp-controller="Home" asp-action="Quem Somos">Quem Somos</a></li>
-                        </ul>
-                    </li>
-                    </li>
-                </ul>
+              
                 <!-- Mobile Menu End -->
             </div>
         </div>

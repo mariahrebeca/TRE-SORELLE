@@ -1,4 +1,18 @@
-<!DOCTYPE html>
+@{
+    ViewData["Title"] = "Cardápio";
+}
+
+
+<!-- About Us Section Start -->
+<section id="about" class="general-row">
+    <div class="container">
+        <div class="row about-wrapper">
+            <div class="col-md-6 col-sm-6 col-xs-12 text-content">
+                <div class="sce-title">
+                    <h2>Cardápio Completo</h2>
+                    <p>O melhor gelato expresso da região!</p>
+                </div>
+                <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -7,7 +21,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="author" content="Remy">
 
-  <title>Remy - Bootstrap HTML5 Restaurant Template | Gallery/Portfolio</title>
+  <title>Remy - Bootstrap HTML5 Restaurant Template | Menu</title>
 
    <!-- Favicon -->
   <link rel="shortcut icon" href="assets/img/favicon.png">
@@ -82,57 +96,18 @@
           <ul class="nav navbar-nav navbar-right">
             <li><a href="index.html">Home</a>
             </li>
-            <li><a href="menu.html">Menu</a></li>           
-            <li><a class="active" href="#">Features</a>
-              <ul class="dropdown">
-                <li><a href="about.html">About Us</a></li>
-                <li><a class="active" href="portfolio.html">Gallery</a></li>
-                <li><a href="team.html">Team</a></li>
-              </ul>
-            </li>
-            <li><a href="contact.html">contact</a></li>
-            <li><a href="blog.html">Blog</a>
-              <ul class="dropdown">
-                <li><a href="blog.html">Page With right sidebar</a></li>
-                <li><a href="left-sidebar.html">Page With left sidebar</a></li>
-                <li><a href="single-post.html">Blog single post</a></li>
-              </ul>
-            </li> 
+            <li><a class="active" href="cardapio.html">Cardápio</a></li>             
           </ul>                 
         </div>		
 
         <!-- Mobile Menu Start -->
         <ul class="wpb-mobile-menu">
           <li><a href="index.html">Home</a>
-            <ul class="dropdown">
-              <li><a href="index.html">Home 1</a></li>
-              <li><a href="index-02.html">Home 2</a></li>
-              <li><a href="index-03.html">Home 3</a></li>
-            </ul>
           </li>
-          <li><a href="menu.html">Menu</a></li>           
-          <li><a href="#">Reservation</a>
+          <li><a class="active" href="cardapio.html">Cardapio</a></li>           
+          <li><a href="#">Features</a>
             <ul class="dropdown">
-              <li><a href="reservation-form-1.html">Reservation Form 1</a></li>
-              <li><a href="reservation-form-2.html">Reservation Form 2</a></li>
-            </ul>
-          </li> 
-          <li><a class="active" href="#">Features</a>
-            <ul class="dropdown">
-              <li><a href="about.html">About Us</a></li>
-              <li><a class="active" href="portfolio.html">Gallery</a></li>
-              <li><a href="team.html">Team</a></li>
-              <li><a href="404.html">404 Page</a></li>
-            </ul>
-          </li>
-          <li><a href="contact.html">contact</a></li>
-          <li><a href="blog.html">Blog</a>
-            <ul class="dropdown">
-              <li><a href="blog.html">Page With right sidebar</a></li>
-              <li><a href="left-sidebar.html">Page With left sidebar</a></li>
-              <li><a href="single-post.html">Blog single post</a></li>
-            </ul>
-          </li> 
+              <li><a href="about.html">Quem</a></li>
         </ul>
         <!-- Mobile Menu End -->		
 			</div>
@@ -145,12 +120,12 @@
   <!-- Top  main section Start -->
   <section class="top-main">
     <div class="top-site-images">
-      <img src="assets/img/bg/gallery.jpg" alt="">
+      <img src="assets/img/bg/hero_banner.jpg" alt="">
     </div>
     <div class="page-title-wrapper">
       <div class="container">
         <div class="banner-wrapper">
-          <h1 class="heading">Gallery</h1>
+          <h1 class="heading">Our Menu</h1>
           <p class="description">REMY - BEST BOOTSTRAP HTML5 RESTAURENT TEMPLATE</p>
         </div>
       </div>
@@ -161,73 +136,213 @@
   <!-- Page Section Start -->
   <div class="page-container">
   	<div class="container">
-  		<div class="row">
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <div class="figure">
-            <img src="assets/img/portfolio/img-1.jpg" alt="">
-            <div class="overlay">
-              <div class="content">
-                <h2>Best Pizza</h2>
-                <h3 class="price">$60</h3>
+  		<div class="row">      
+        
+  			<!-- Left Menu -->
+  			<div class="col-md-6 col-sm-6 col-sx-12"> 				
+  				<div class="menu-item">
+            <div class="menu-left">
+              <img src="assets/img/menu/img-01.jpg" alt="">
+            </div>    
+            <div class="menu-right">
+              <span class="price">$45</span>
+              <h4>Rosted Chicken with Wine</h4>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
               </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam provident aliquam, fuga asperiores obcaecati...</p>
             </div>
           </div>
-        </div>	
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <div class="figure">
-            <img src="assets/img/portfolio/img-2.jpg" alt="">
-            <div class="overlay">
-              <div class="content">
-                <h2>Vegetarian Dishes </h2>
-                <h3 class="price">$80</h3>
+  			</div>
+  			<!-- Right Menu -->
+  			<div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="menu-item">
+            <div class="menu-left">
+              <img src="assets/img/menu/img-02.jpg" alt="">
+            </div>    
+            <div class="menu-right">
+              <span class="price">$45</span>
+              <h4>Rosted Chicken with Wine</h4>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
               </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam provident aliquam, fuga asperiores obcaecati...</p>
             </div>
           </div>
-        </div>  
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <div class="figure">
-            <img src="assets/img/portfolio/img-3.jpg" alt="">
-            <div class="overlay">
-              <div class="content">
-                <h2>Coffee Day</h2>
-                <h3 class="price">$50</h3>
+        </div>
+
+        <!-- Left Menu -->
+        <div class="col-md-6 col-sm-6 col-sx-12">         
+          <div class="menu-item">
+            <div class="menu-left">
+              <img src="assets/img/menu/img-03.jpg" alt="">
+            </div>    
+            <div class="menu-right">
+              <span class="price">$45</span>
+              <h4>Rosted Chicken with Wine</h4>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
               </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam provident aliquam, fuga asperiores obcaecati...</p>
             </div>
           </div>
-        </div> 
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <div class="figure">
-            <img src="assets/img/portfolio/img-4.jpg" alt="">
-            <div class="overlay">
-              <div class="content">
-                <h2>Cocktail List</h2>
-                <h3 class="price">$40</h3>
-              </div>              
+        </div>
+        <!-- Right Menu -->
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="menu-item">
+            <div class="menu-left">
+              <img src="assets/img/menu/img-04.jpg" alt="">
+            </div>    
+            <div class="menu-right">
+              <span class="price">$45</span>
+              <h4>Rosted Chicken with Wine</h4>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam provident aliquam, fuga asperiores obcaecati...</p>
             </div>
           </div>
-        </div>  
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <div class="figure">
-            <img src="assets/img/portfolio/img-5.jpg" alt="">
-            <div class="overlay">
-              <div class="content">
-                <h2>Grilled Chicken</h2>
-                <h3 class="price">$22</h3>
-              </div>              
+        </div>
+
+        <!-- Left Menu -->
+        <div class="col-md-6 col-sm-6 col-sx-12">         
+          <div class="menu-item">
+            <div class="menu-left">
+              <img src="assets/img/menu/img-05.jpg" alt="">
+            </div>    
+            <div class="menu-right">
+              <span class="price">$45</span>
+              <h4>Rosted Chicken with Wine</h4>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam provident aliquam, fuga asperiores obcaecati...</p>
             </div>
           </div>
-        </div>  
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <div class="figure">
-            <img src="assets/img/portfolio/img-6.jpg" alt="">
-            <div class="overlay">
-              <div class="content">
-                <h2>Special Veg</h2>
-                <h3 class="price">$90</h3>
-              </div>              
+        </div>
+        <!-- Right Menu -->
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="menu-item">
+            <div class="menu-left">
+              <img src="assets/img/menu/img-06.jpg" alt="">
+            </div>    
+            <div class="menu-right">
+              <span class="price">$45</span>
+              <h4>Rosted Chicken with Wine</h4>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam provident aliquam, fuga asperiores obcaecati...</p>
             </div>
           </div>
-        </div>   	
+        </div>
+
+        <!-- Left Menu -->
+        <div class="col-md-6 col-sm-6 col-sx-12">         
+          <div class="menu-item">
+            <div class="menu-left">
+              <img src="assets/img/menu/img-07.jpg" alt="">
+            </div>    
+            <div class="menu-right">
+              <span class="price">$45</span>
+              <h4>Rosted Chicken with Wine</h4>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam provident aliquam, fuga asperiores obcaecati...</p>
+            </div>
+          </div>
+        </div>
+        <!-- Right Menu -->
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="menu-item">
+            <div class="menu-left">
+              <img src="assets/img/menu/img-08.jpg" alt="">
+            </div>    
+            <div class="menu-right">
+              <span class="price">$45</span>
+              <h4>Rosted Chicken with Wine</h4>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam provident aliquam, fuga asperiores obcaecati...</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Left Menu -->
+        <div class="col-md-6 col-sm-6 col-sx-12">         
+          <div class="menu-item">
+            <div class="menu-left">
+              <img src="assets/img/menu/img-05.jpg" alt="">
+            </div>    
+            <div class="menu-right">
+              <span class="price">$45</span>
+              <h4>Rosted Chicken with Wine</h4>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam provident aliquam, fuga asperiores obcaecati...</p>
+            </div>
+          </div>
+        </div>
+        <!-- Right Menu -->
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="menu-item">
+            <div class="menu-left">
+              <img src="assets/img/menu/img-04.jpg" alt="">
+            </div>    
+            <div class="menu-right">
+              <span class="price">$45</span>
+              <h4>Rosted Chicken with Wine</h4>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam provident aliquam, fuga asperiores obcaecati...</p>
+            </div>
+          </div>
+        </div>
+  				
   		</div>
   	</div>
   </div>
@@ -308,11 +423,11 @@
     <!-- Copyright End -->
   </footer>
   <!-- Footer Section End -->
-
+  
   <!-- Go To Top Link -->
   <a href="#" class="back-to-top">
-    <i class="fa fa-angle-up"></i>
-  </a> 
+		<i class="fa fa-angle-up"></i>
+	</a> 
   
   <!-- Main JS  -->
   <script type="text/javascript" src="assets/js/jquery-min.js"></script>      
