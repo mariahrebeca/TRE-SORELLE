@@ -23,7 +23,7 @@ public class HomeController : Controller
         return View();
     }
 
-        public IActionResult Cardapio()
+    public IActionResult Cardapio()
     {
         return View();
     }
