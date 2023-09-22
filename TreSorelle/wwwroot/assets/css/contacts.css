@@ -31,7 +31,7 @@ textarea {
 .form-control:focus,
 textarea:focus {
   box-shadow: none;
-  border: 1px solid #f26522;
+  border: 1px solid #db75a8;
 }
 select.form-control {
   border: 0;
@@ -40,7 +40,7 @@ select.form-control {
 }
 select.form-control:focus {
   border: 0;
-  outline: 1px solid #f26522;
+  outline: 1px solid #db75a8;
   background-color: #fff;
 }
 .information {
@@ -84,7 +84,7 @@ select.form-control:focus {
   padding-right: 15px;
 }
 .page-login-form .form-links li a:hover {
-  color: #f26522;
+  color: #db75a8;
 }
 .btn-sn {
   width: 100%;
@@ -112,7 +112,7 @@ select.form-control:focus {
 }
 .contact-item-wrapper .icon i {
   font-size: 36px;
-  color: #f26522;
+  color: #db75a8;
 }
 .list-unstyled li {
   text-align: left;

@@ -44,7 +44,7 @@
   font-weight: 400;
 }
 .blog-post .post-time .madia-post {
-  background-color: #f26522;
+  background-color: #db75a8;
 }
 .blog-post .post-time .madia-post a {
   display: block;
@@ -85,7 +85,7 @@
   margin-top: 20px;
 }
 .blog-post .quote {
-  background-color: #f26522;
+  background-color: #db75a8;
   margin: 5px 5px 0px;
   padding: 20px;
   display: inline-block;
@@ -279,11 +279,11 @@
 }
 #pagination span.current {
   color: #fff;
-  background: #f26522;
+  background: #db75a8;
 }
 #pagination a:hover {
   color: #fff;
-  background: #f26522;
+  background: #db75a8;
 }
 #pagination .all-pages,
 #pagination .next-page {
@@ -306,7 +306,7 @@
 .social-link a i {
   font-size: 18px;
   padding: 10px;
-  background: #f26522;
+  background: #db75a8;
   width: 40px;
   height: 40px;
   display: inline-block;
@@ -364,7 +364,7 @@ blockquote .quote-text {
   margin-bottom: 4px;
 }
 .post-tags-list a:hover {
-  color: #f26522;
+  color: #db75a8;
 }
 .comments-title {
   font-size: 20px;

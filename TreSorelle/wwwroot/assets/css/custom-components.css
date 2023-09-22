@@ -87,16 +87,16 @@
   color: #323232;
   background: transparent;
   border-color: transparent;
-  border-bottom: 2px solid #f26522;
+  border-bottom: 2px solid #db75a8;
   border-radius: 0;
 }
 #recipes .nav-tabs > li > a:focus,
 #recipes .nav-tabs > li > a:hover {
   background: transparent;
-  border-bottom: 2px solid #f26522;
+  border-bottom: 2px solid #db75a8;
 }
 #recipes .nav-tabs > li > a:hover {
-  border-color: transparent transparent #f26522;
+  border-color: transparent transparent #db75a8;
 }
 #recipes .item {
   display: inline-block;
@@ -403,7 +403,7 @@
   color: #323232;
 }
 #contact .contact-number h3 {
-  color: #f26522;
+  color: #db75a8;
   font-size: 48px;
   margin-bottom: 30px;
 }
@@ -489,7 +489,7 @@
   transition: all 0.3s ease-in-out;
 }
 .footer-area .social-icon a i:hover {
-  background: #f26522;
+  background: #db75a8;
   color: #fff;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -510,7 +510,7 @@
   color: #fff;
 }
 #copyright p a:hover {
-  color: #f26522;
+  color: #db75a8;
 }
 #features {
   padding: 60px 0;
@@ -597,7 +597,7 @@
 }
 .menu-item .menu-right .price {
   padding: 5px 15px;
-  background-color: #f26522;
+  background-color: #db75a8;
   font-size: 18px;
   font-weight: 600;
   color: #FFF;
@@ -697,7 +697,7 @@
 }
 #cool-facts .fact-block .fact-count i {
   font-size: 50px;
-  color: #f26522;
+  color: #db75a8;
 }
 #cool-facts .fact-block h3 {
   font-size: 40px;
@@ -765,7 +765,7 @@
   display: table;
   margin: 0 auto;
   font-weight: 400;
-  background: #f26522;
+  background: #db75a8;
 }
 .figure:hover img {
   -webkit-transform: scale(1.2);
