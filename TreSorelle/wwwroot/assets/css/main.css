@@ -82,7 +82,7 @@ p {
   line-height: 24px;
 }
 a {
-  color: #444;
+  color: #030303;
 }
 .uppercase {
   text-transform: uppercase;
@@ -93,10 +93,8 @@ img {
 .section-title {
   position: relative;
   padding-top: 80px;
-  background: url(../img/top.png);
-  background-position: center top;
   background-repeat: no-repeat;
-  margin: 30px 0;
+  margin: 10px 0;
   text-align: center;
 }
 .section-title h2 {
@@ -106,7 +104,7 @@ img {
   margin-bottom: 20px;
 }
 .section-title p {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 300;
   color: #323232;
 }
@@ -1362,7 +1360,7 @@ img {
 }
 #cool-facts {
   padding: 80px 0;
-  background: url(../img/bg/facts-bg.jpg) fixed;
+  background: url(../img/restaurant/img2.jpg) fixed;
   background-position: center center;
   background-size: cover;
 }

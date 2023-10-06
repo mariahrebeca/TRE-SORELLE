@@ -128,7 +128,7 @@
                                 <li><i class="fa fa-home"></i> Tre Sorelle Gelateria </li>
                                 <li>Av. Pedro Ometto - 2199</li>
                                 <li>Barra Bonita, SP</li>
-                                <li><i class="fa fa-envelope-o"></i> hello@remyresturent.com</li>
+                                <li><i class="fa fa-envelope-o"></i> tresorelle@gmail.com</li>
                             </ul>
                         </div>
                     </div>
@@ -145,11 +145,8 @@
                         <div class="widget">
                             <h3 class="widget-title"><i class="fa fa-thumbs-o-up"></i> Acompanhe nossas Redes Sociais</h3>
                             <div class="social-icon">
-                                <a href="#"><i class="fa fa-twitter"></i></a>
                                 <a href="#"><i class="fa fa-facebook"></i></a>
                                 <a href="#"><i class="fa fa-instagram"></i></a>
-                                <a href="#"><i class="fa fa-youtube"></i></a>
-                                <a href="#"><i class="fa fa-google-plus"></i></a>
                             </div>
                         </div>
                     </div>
@@ -158,18 +155,6 @@
         </div>
         <!-- Footer area End -->
 
-        <!-- Copyright Start  -->
-        <div id="copyright">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <p>© Copyright 2016 Remy - Designed & Developed By <a href="http://graygrids.com">GrayGrids</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Copyright End -->
     </footer>
     <!-- Footer Section End -->
 
@@ -203,137 +188,7 @@
             });
 
     </script>
-    <!-- Google Maps API -->
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.expsensor=false"></script>
 
-    <!-- Google Maps JS Only for Contact Pages -->
-    <script type="text/javascript">
-        var map;
-        var plain = new google.maps.LatLng(-37.813955, 144.967495, 15);
-        var mapCoordinates = new google.maps.LatLng(-37.813955, 144.967495, 15);
-        var markers = [];
-        var image = new google.maps.MarkerImage(
-            'assets/img/map-marker.png',
-            new google.maps.Size(50, 70),
-            new google.maps.Point(0, 0),
-            new google.maps.Point(60, 60)
-        );
-        function addMarker() {
-            markers.push(new google.maps.Marker({
-                position: plain,
-                raiseOnDrag: false,
-                icon: image,
-                map: map,
-                draggable: false
-            }));
-
-        }
-
-        function initialize() {
-            var mapOptions = {
-                backgroundColor: "#ffffff",
-                zoom: 14,
-                disableDefaultUI: true,
-                center: mapCoordinates,
-                zoomControl: false,
-                scaleControl: false,
-                scrollwheel: false,
-                disableDoubleClickZoom: true,
-                mapTypeId: google.maps.MapTypeId.ROADMAP,
-                styles: [{
-                    "featureType": "landscape.natural",
-                    "elementType": "geometry.fill",
-                    "stylers": [{
-                        "color": "#ffffff"
-                    }]
-                }
-                    , {
-                    "featureType": "landscape.man_made",
-                    "stylers": [{
-                        "color": "#ffffff"
-                    }
-                        , {
-                        "visibility": "off"
-                    }
-                    ]
-                }
-                    , {
-                    "featureType": "water",
-                    "stylers": [{
-                        "color": "#80C8E5"
-                    }
-                        , {
-                        "saturation": 0
-                    }
-                    ]
-                }
-                    , {
-                    "featureType": "road.arterial",
-                    "elementType": "geometry",
-                    "stylers": [{
-                        "color": "#999999"
-                    }
-                    ]
-                }
-                    , {
-                    "elementType": "labels.text.stroke",
-                    "stylers": [{
-                        "visibility": "off"
-                    }
-                    ]
-                }
-                    , {
-                    "elementType": "labels.text",
-                    "stylers": [{
-                        "color": "#333333"
-                    }
-                    ]
-                }
-
-                    , {
-                    "featureType": "road.local",
-                    "stylers": [{
-                        "color": "#dedede"
-                    }
-                    ]
-                }
-                    , {
-                    "featureType": "road.local",
-                    "elementType": "labels.text",
-                    "stylers": [{
-                        "color": "#666666"
-                    }
-                    ]
-                }
-                    , {
-                    "featureType": "transit.station.bus",
-                    "stylers": [{
-                        "saturation": -57
-                    }
-                    ]
-                }
-                    , {
-                    "featureType": "road.highway",
-                    "elementType": "labels.icon",
-                    "stylers": [{
-                        "visibility": "off"
-                    }
-                    ]
-                }
-                    , {
-                    "featureType": "poi",
-                    "stylers": [{
-                        "visibility": "off"
-                    }
-                    ]
-                }
-
-                ]
-            };
-            map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
-            addMarker();
-        }
-        google.maps.event.addDomListener(window, 'load', initialize);
     </script>
 </body>
 
