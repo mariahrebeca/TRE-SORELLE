@@ -103,11 +103,11 @@
   margin-bottom: 30px;
 }
 #recipes .item .img {
-  float: left;
+  float: center;
 }
 #recipes .item .details {
   width: 280px;
-  float: left;
+  float: center;
   padding: 0 20px;
 }
 #recipes .item .price {

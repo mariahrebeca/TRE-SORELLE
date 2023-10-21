@@ -8,7 +8,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="author" content="Remy">
 
-    <title>Tre Sorelle - Home</title>
+    <title>Tre Sorelle - @ViewBag.Title</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="48x48" href="~/assets/img/favicon.png">
@@ -80,11 +80,11 @@
 
                     <!-- Start Navigation List -->
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a class="active" asp-action="Index" asp-controller="Home">Home</a>
+                        <li><a class='@(ViewBag.Title == "Home" ? "active" : "")' asp-action="Index" asp-controller="Home">Home</a>
                             
                         </li>
-                        <li><a asp-action="Cardapio" asp-controller="Home">Cardápio</a></li>
-                        <li><a asp-action="QuemSomos" asp-controller="Home">Quem Somos</a></li>
+                        <li><a class='@(ViewBag.Title == "Cardápio" ? "active" : "")' asp-action="Cardapio" asp-controller="Home">Cardápio</a></li>
+                        <li><a class='@(ViewBag.Title == "Quem Somos" ? "active" : "")' asp-action="QuemSomos" asp-controller="Home">Quem Somos</a></li>
                     </ul>
                 </div>
 
