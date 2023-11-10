@@ -18,8 +18,14 @@ public class Produto
     [StringLength(300, ErrorMessage = "A Descrição Resumida deve possuir no máximo 300 caracteres")]
     public string DescricaoResumida { get; set; }
 
+     [StringLength(300)]
+    public string Foto { get; set; }
+
     [Display(Name = "Preço")]
     [Column(TypeName = "decimal(3,2)")]
     [Required(ErrorMessage = "Informe o Preço de Venda")]
     public decimal Preco { get; set; }
+
+    [Display(Name = "Nota do Produto")]
+    public byte? Nota { get; set; }
 }
