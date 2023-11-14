@@ -115,7 +115,7 @@ public class AppDbSeed
                 Nome = "MilkShake de Paçoca",
                 DescricaoResumida = "Gelato de leite, calda de caramelo e farofa de paçoca.",
                 Preco = 15.00M,
-                Foto = @"~/assets/img/menu/img-16.jpg",
+                Foto = @"~/assets/img/menu/img-17.jpg",
                 Nota = 5,
             },
                 new Produto() {
@@ -131,7 +131,7 @@ public class AppDbSeed
                 Nome = "MilkShake de Banoffe",
                 DescricaoResumida = "Gelato de leite, doce de leite argentino, banana, chantilly, finalizado com cacau em pó.",
                 Preco = 17.00M,
-                Foto = @"~/assets/img/menu/img-05.jpg",
+                Foto = @"~/assets/img/menu/img-16.jpg",
                 Nota = 5,
             },
                 new Produto() {
@@ -139,7 +139,7 @@ public class AppDbSeed
                 Nome = "MilkShake de Café",
                 DescricaoResumida = "Gelato de leite, calda de caramelo, café, chantilly, finalizado com canela.",
                 Preco = 17.00M,
-                Foto = @"~/assets/img/menu/img-08.jpg",
+                Foto = @"~/assets/img/menu/img-15.jpg",
                 Nota = 5,
             },
                 new Produto() {
@@ -219,7 +219,7 @@ public class AppDbSeed
                 Nome = "Croissant Tradicional",
                 DescricaoResumida = "Croissant caseiro, crocante por fora e macio por dentro.",
                 Preco = 9.00M,
-                Foto = @"~/assets/img/menu/img-21.jpg",
+                Foto = @"~/assets/img/menu/img-23.jpg",
                 Nota = 5,
             },
                 new Produto() {
@@ -227,7 +227,7 @@ public class AppDbSeed
                 Nome = "Croissant Sanduíche",
                 DescricaoResumida = "Croissant caseiro recheado. Consulte os sabores disponíveis.",
                 Preco = 17.00M,
-                Foto = @"~/assets/img/menu/img-21.jpg",
+                Foto = @"~/assets/img/menu/img-25.jpg",
                 Nota = 5,
             },
                 new Produto() {
@@ -235,47 +235,63 @@ public class AppDbSeed
                 Nome = "Croissant Nutella",
                 DescricaoResumida = "Croissant caseiro, recheado com Nutella e morangos.",
                 Preco = 20.00M,
+                Foto = @"~/assets/img/menu/img-25.jpg",
+                Nota = 5,
             },
                 new Produto() {
                 Id = 26,
                 Nome = "Croissant Banoffe",
                 DescricaoResumida = "Croissant caseiro, recheado com banana e doce de leite.",
                 Preco = 20.00M,
+                Foto = @"~/assets/img/menu/img-23.jpg",
+                Nota = 5,
             },
                 new Produto() {
                 Id = 27,
                 Nome = "Cappuccino",
                 DescricaoResumida = "Cappuccino tradicional feito na hora.",
                 Preco = 10.00M,
+                Foto = @"~/assets/img/menu/img-32.jpg",
+                Nota = 5,
             },
                 new Produto() {
                 Id = 28,
                 Nome = "Refrigerantes",
                 DescricaoResumida = "Refrigerante lata.",
                 Preco = 6.00M,
+                Foto = @"~/assets/img/menu/img-29.jpg",
+                Nota = 5,
             },
                 new Produto() {
                 Id = 29,
                 Nome = "Café Expresso",
                 DescricaoResumida = "Café expresso feito na hora.",
                 Preco = 5.00M,
+                Foto = @"~/assets/img/menu/img-30.jpg",
+                Nota = 5,
             },
                 new Produto() {
                 Id = 30,
                 Nome = "Chocolate Quente",
                 DescricaoResumida = "Chocolate Quente cremoso.",
                 Preco = 10.00M,
+                Foto = @"~/assets/img/menu/img-28.jpg",
+                Nota = 5,
             },
                 new Produto() {
                 Id = 31,
                 DescricaoResumida = "Crema Café feito na hora.",
                 Preco = 8.00M,
+                Foto = @"~/assets/img/menu/img-32.jpg",
+                Nota = 5,
             },
                 new Produto() {
                 Id = 32,
                 Nome = "Água Mineral",
                 DescricaoResumida = "Água mineral com ou sem gás.",
                 Preco = 3.00M,
+                Foto = @"~/assets/img/menu/img-27.jpg",
+                Nota = 5,
             },
 
         };
@@ -290,12 +306,6 @@ public class AppDbSeed
                Id = Guid.NewGuid().ToString(),
                Name = "Administrador",
                NormalizedName = "ADMINISTRADOR"
-            },
-            new IdentityRole()
-            {
-               Id = Guid.NewGuid().ToString(),
-               Name = "Funcionário",
-               NormalizedName = "FUNCIONARIO"
             },
             new IdentityRole()
             {
