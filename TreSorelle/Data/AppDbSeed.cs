@@ -280,7 +280,7 @@ public class AppDbSeed
             },
                 new Produto() {
                 Id = 31,
-                DescricaoResumida = "Crema Café feito na hora.",
+                DescricaoResumida = "Creme Café feito na hora.",
                 Preco = 8.00M,
                 Foto = @"~/assets/img/menu/img-32.jpg",
                 Nota = 5,

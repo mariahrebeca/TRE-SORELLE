@@ -28,4 +28,5 @@ public class Produto
 
     [Display(Name = "Nota do Produto")]
     public byte? Nota { get; set; }
+    public ICollection<ProdutoAvaliacao> Avaliacoes { get; set; }
 }

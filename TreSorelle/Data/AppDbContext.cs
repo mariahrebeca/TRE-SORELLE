@@ -20,7 +20,21 @@ public class AppDbContext : IdentityDbContext
         base.OnModelCreating(builder);
         AppDbSeed appDbSeed = new(builder);
 
+    #region Relacionamento Muito para Muitos - ProdutoAvaliacao
+        builder.Entity<ProdutoAvaliacao>().HasKey(
+            pa => new{pa.ProdutoId, pa.UsuarioId}
+        );
 
+        builder.Entity<ProdutoAvaliacao>()
+            .HasOne(pa => pa.Produto)
+            .WithMany(p => p.Avaliacoes)
+            .HasForeignKey(pa => pa.ProdutoId);
+
+        builder.Entity<ProdutoAvaliacao>()
+            .HasOne(pa => pa.Usuario)
+            .WithMany(u => u.Avaliacoes)
+            .HasForeignKey(pa => pa.UsuarioId);
+        #endregion
 
     }
 
