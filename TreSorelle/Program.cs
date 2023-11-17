@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 //Serviço de Conexão
-string conn = builder.Configuration.GetConnectionString("CozastoreConn");
+string conn = builder.Configuration.GetConnectionString("TreSorelleConn");
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseMySql(conn, ServerVersion.AutoDetect(conn))
 );

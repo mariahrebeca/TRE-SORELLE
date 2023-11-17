@@ -22,7 +22,7 @@ public class Produto
     public string Foto { get; set; }
 
     [Display(Name = "Preço")]
-    [Column(TypeName = "decimal(3,2)")]
+    [Column(TypeName = "decimal(6,2)")]
     [Required(ErrorMessage = "Informe o Preço de Venda")]
     public decimal Preco { get; set; }
 

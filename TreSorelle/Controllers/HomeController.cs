@@ -1,5 +1,6 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using TreSorelle.Data;
 using TreSorelle.Models;
 
 namespace TreSorelle.Controllers;
@@ -7,9 +8,11 @@ namespace TreSorelle.Controllers;
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
+    private readonly AppDbContext _contexto;
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(ILogger<HomeController> logger, AppDbContext contexto)
     {
+        _contexto = contexto;
         _logger = logger;
     }
 
@@ -25,7 +28,8 @@ public class HomeController : Controller
 
     public IActionResult Cardapio()
     {
-        return View();
+        var produtos = _contexto.Produtos.ToList();
+        return View(produtos);
     }
 
     public IActionResult Privacy()
