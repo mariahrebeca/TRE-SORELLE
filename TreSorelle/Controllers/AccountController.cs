@@ -1,9 +1,8 @@
 using System.Net.Mail;
-using System.Runtime.CompilerServices;
 using System.Security.Claims;
+using TreSorelle.ViewModels;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using TreSorelle.ViewModels;
 
 namespace TreSorelle.Controllers;
 
@@ -19,17 +18,18 @@ public class AccountController : Controller
         UserManager<IdentityUser> userManager)
     {
         _logger = logger;
-        _signInManager = signInManager;
-        _userManager = userManager;
+       _signInManager = signInManager; 
+       _userManager = userManager;
     }
 
     [HttpGet]
     public IActionResult Login(string returnUrl)
     {
-        LoginVM loginVM = new() {
+        LoginVM login = new()
+        {
             UrlRetorno = returnUrl ?? Url.Content("~/")
         };
-        return View(loginVM);
+        return View(login);
     }
 
     [HttpPost]
@@ -38,37 +38,34 @@ public class AccountController : Controller
     {
         if (ModelState.IsValid)
         {
-            // Verifico o login
             string userName = login.Email;
-            if (IsValidEmail(login.Email))
-            {
+            try {
+                MailAddress mail = new(login.Email);
                 var user = await _userManager.FindByEmailAsync(login.Email);
                 if (user != null)
-                {
                     userName = user.UserName;
-                }
             }
+            catch
+            {}
             var result = await _signInManager.PasswordSignInAsync(
                 userName, login.Senha, login.Lembrar, lockoutOnFailure: true
             );
-
             if (result.Succeeded)
             {
                 _logger.LogInformation($"Usuário {login.Email} acessou o sistema");
                 return LocalRedirect(login.UrlRetorno);
             }
-
-            // if (result.IsLockedOut)
-            // {
-            //     _logger.LogWarning($"Usuário {login.Email} foi bloqueado");
-            //     return RedirectToAction("Lockout");
-            // }
-
-            ModelState.AddModelError(string.Empty, "Usuário e/ou Senha Inválidos!!");
-
+            if (result.IsLockedOut)
+            {
+                _logger.LogWarning($"Usuário {login.Email} está bloqueado");
+                ModelState.AddModelError(string.Empty, "Sua Conta Está Bloqueada! Aguarde alguns minutos para tentar novamente!");
+            }
+            else
+                ModelState.AddModelError(string.Empty, "Usuário e/ou Senha Inválidos!!!");
         }
         return View(login);
     }
+
 
     [HttpPost]
     [ValidateAntiForgeryToken]
@@ -77,19 +74,5 @@ public class AccountController : Controller
         _logger.LogInformation($"Usuário {ClaimTypes.Email} fez logoff");
         await _signInManager.SignOutAsync();
         return RedirectToAction("Index", "Home");
-    }
-
-    
-    private static bool IsValidEmail(string email)
-    {
-        try
-        {
-            MailAddress m = new(email);
-            return true;
-        }
-        catch
-        {
-            return false;
-        }
     }
 }

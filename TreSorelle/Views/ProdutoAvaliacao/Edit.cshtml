@@ -1,0 +1,41 @@
+@model TreSorelle.Models.ProdutoAvaliacao
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h1>Edit</h1>
+
+<h4>ProdutoAvaliacao</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ProdutoId" />
+            <input type="hidden" asp-for="UsuarioId" />
+            <div class="form-group">
+                <label asp-for="AvaliacaoData" class="control-label"></label>
+                <input asp-for="AvaliacaoData" class="form-control" />
+                <span asp-validation-for="AvaliacaoData" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProdutoNota" class="control-label"></label>
+                <input asp-for="ProdutoNota" class="form-control" />
+                <span asp-validation-for="ProdutoNota" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
