@@ -5,50 +5,72 @@
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
-<h1>Create</h1>
-
-<h4>Produto</h4>
+<h1 class="display-4">Produto</h1>
+<h4 class="display-6">Adicionar</h4>
 <hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Nome" class="control-label"></label>
-                <input asp-for="Nome" class="form-control" />
-                <span asp-validation-for="Nome" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="DescricaoResumida" class="control-label"></label>
-                <input asp-for="DescricaoResumida" class="form-control" />
-                <span asp-validation-for="DescricaoResumida" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Foto" class="control-label"></label>
-                <input asp-for="Foto" class="form-control" />
-                <span asp-validation-for="Foto" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Preco" class="control-label"></label>
-                <input asp-for="Preco" class="form-control" />
-                <span asp-validation-for="Preco" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Nota" class="control-label"></label>
-                <input asp-for="Nota" class="form-control" />
-                <span asp-validation-for="Nota" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
-</div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+<form asp-action="Create" class="row" enctype="multipart/form-data">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="col-md-9 col-sm-12">
+        <div class="form-group mb-3">
+            <label asp-for="Nome" class="control-label"></label>
+            <input asp-for="Nome" class="form-control" />
+            <span asp-validation-for="Nome" class="text-danger"></span>
+        </div>
+        <div class="form-group mb-3">
+            <label asp-for="DescricaoResumida" class="control-label"></label>
+            <input asp-for="DescricaoResumida" class="form-control" />
+            <span asp-validation-for="DescricaoResumida" class="text-danger"></span>
+        </div>
+        <div class="form-group mb-3">
+            <label asp-for="Preco" class="control-label"></label>
+            <input asp-for="Preco" class="form-control" />
+            <span asp-validation-for="Preco" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Nota" class="control-label"></label>
+            <input asp-for="Nota" class="form-control" />
+            <span asp-validation-for="Nota" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="col-md-3 col-sm-12">
+        <div class="form-group">
+            <label asp-for="Foto" class="control-label"></label>
+            <img id="PreviewImage" src="~/assets/img/sem_foto.png" class="img-fluid w-100 pointer" onclick="changeImage()">
+            <input type="file" name="formFile" class="form-control" accept=".jpg,.jpeg,.png,.gif,.jfif" hidden />
+        </div>
+    </div>
+    
+    <div class="form-group mt-4">
+        <button type="submit" class="btn btn-danger me-3" style="background-color: #db75a8"><i
+                class="bi bi-save2-fill"></i> Salvar</button>
+        <a asp-action="Index" class="btn btn-danger" style="background-color: #db75a8"><i
+                class="bi bi-arrow-left-circle-fill"></i> Voltar a Listagem</a>
+    </div>
+
+</form>
+
+
+
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script>
+        function changeImage() {
+            document.querySelector('input[type="file"]').click();
+        }
+
+        window.addEventListener('load', function () {
+            document.querySelector('input[type="file"]').addEventListener('change', function () {
+                if (this.files && this.files[0]) {
+                    var img = document.getElementById('PreviewImage');
+                    img.src = URL.createObjectURL(this.files[0]);
+                }
+            });
+        });
+    </script>
 }

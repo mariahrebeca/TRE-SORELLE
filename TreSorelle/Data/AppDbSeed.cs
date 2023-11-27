@@ -341,7 +341,7 @@ public class AppDbSeed
                 UsuarioId = users[0].Id,
                 Nome = "Maria Luiza Gonçalves da Silva",
                 DataNascimento = DateTime.Parse("10/08/2005"),
-                Foto = "/images/usuarios/avatar.png"
+                Foto = "/assets/img/usuarios/avatar.png"
             }
         };
         builder.Entity<Usuario>().HasData(usuarios);

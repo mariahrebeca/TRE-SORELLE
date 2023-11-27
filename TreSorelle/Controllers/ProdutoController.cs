@@ -13,16 +13,18 @@ namespace TreSorelle.Controllers
     public class ProdutoController : Controller
     {
         private readonly AppDbContext _context;
+        private readonly IWebHostEnvironment _hostEnvironment;
 
-        public ProdutoController(AppDbContext context)
+        public ProdutoController(AppDbContext context, IWebHostEnvironment hostEnvironment)
         {
             _context = context;
+            _hostEnvironment = hostEnvironment;
         }
 
         // GET: Produto
         public async Task<IActionResult> Index()
         {
-              return View(await _context.Produtos.ToListAsync());
+            return View(await _context.Produtos.ToListAsync());
         }
 
         // GET: Produto/Details/5
@@ -54,12 +56,26 @@ namespace TreSorelle.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nome,DescricaoResumida,Foto,Preco,Nota")] Produto produto)
+        public async Task<IActionResult> Create([Bind("Id,Nome,DescricaoResumida,Foto,Preco,Nota")] Produto produto, IFormFile formFile)
         {
             if (ModelState.IsValid)
             {
                 _context.Add(produto);
                 await _context.SaveChangesAsync();
+
+                if (formFile != null)
+                {
+                    string wwwRootPath = _hostEnvironment.WebRootPath;
+                    string fileName = produto.Id.ToString() + Path.GetExtension(formFile.FileName);
+                    string uploads = Path.Combine(wwwRootPath, @"assets\img\produtos");
+                    string newFile = Path.Combine(uploads, fileName);
+                    using (var stream = new FileStream(newFile, FileMode.Create))
+                    {
+                        formFile.CopyTo(stream);
+                    }
+                    produto.Foto = @"\assets\img\produtos\" + fileName;
+                    await _context.SaveChangesAsync();
+                }
                 return RedirectToAction(nameof(Index));
             }
             return View(produto);
@@ -86,7 +102,7 @@ namespace TreSorelle.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,DescricaoResumida,Foto,Preco,Nota")] Produto produto)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,DescricaoResumida,Foto,Preco,Nota")] Produto produto, IFormFile formFile)
         {
             if (id != produto.Id)
             {
@@ -97,6 +113,26 @@ namespace TreSorelle.Controllers
             {
                 try
                 {
+                    if (formFile != null)
+                    {
+                        string wwwRootPath = _hostEnvironment.WebRootPath;
+                        if (produto.Foto != null)
+                        {
+                            string oldFile = Path.Combine(wwwRootPath, produto.Foto.TrimStart('\\'));
+                            if (System.IO.File.Exists(oldFile))
+                            {
+                                System.IO.File.Delete(oldFile);
+                            }
+                        }
+                        string fileName = produto.Id.ToString() + Path.GetExtension(formFile.FileName);
+                        string uploads = Path.Combine(wwwRootPath, @"assets\img\produtos");
+                        string newFile = Path.Combine(uploads, fileName);
+                        using (var stream = new FileStream(newFile, FileMode.Create))
+                        {
+                            formFile.CopyTo(stream);
+                        }
+                        produto.Foto = @"\assets\img\produtos\" + fileName;
+                    }
                     _context.Update(produto);
                     await _context.SaveChangesAsync();
                 }
@@ -148,14 +184,14 @@ namespace TreSorelle.Controllers
             {
                 _context.Produtos.Remove(produto);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool ProdutoExists(int id)
         {
-          return _context.Produtos.Any(e => e.Id == id);
+            return _context.Produtos.Any(e => e.Id == id);
         }
     }
 }
