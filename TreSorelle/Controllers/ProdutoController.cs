@@ -73,7 +73,7 @@ namespace TreSorelle.Controllers
                     {
                         formFile.CopyTo(stream);
                     }
-                    produto.Foto = @"\assets\img\produtos\" + fileName;
+                    produto.Foto = @"/assets/img/produtos/" + fileName;
                     await _context.SaveChangesAsync();
                 }
                 return RedirectToAction(nameof(Index));
@@ -131,7 +131,7 @@ namespace TreSorelle.Controllers
                         {
                             formFile.CopyTo(stream);
                         }
-                        produto.Foto = @"\assets\img\produtos\" + fileName;
+                        produto.Foto = @"/assets/img/produtos/" + fileName;
                     }
                     _context.Update(produto);
                     await _context.SaveChangesAsync();
