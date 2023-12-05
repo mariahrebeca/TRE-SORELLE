@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace TreSorelle.Migrations
 {
-    public partial class criarbanco : Migration
+    public partial class InitialCreate : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -287,14 +287,14 @@ namespace TreSorelle.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { "80be11d5-c31c-4f7c-b3a7-cc2b5d2cbb0e", "d191b415-6cbe-4311-a08c-50136727319e", "Cliente", "CLIENTE" },
-                    { "fe2ef608-8f5e-42fd-9a6f-6669c607692c", "78156905-93ef-4fdc-a475-b5134dd47113", "Administrador", "ADMINISTRADOR" }
+                    { "5b95f310-4081-4ba3-ba0c-049fc13d65d7", "1c9d9279-954f-48ce-ba09-dc1824e33567", "Cliente", "CLIENTE" },
+                    { "be5dea55-8b9c-4d77-93fd-2f6441cbec2b", "68b38ac5-0f99-45cc-a513-b31163ce140f", "Administrador", "ADMINISTRADOR" }
                 });
 
             migrationBuilder.InsertData(
                 table: "AspNetUsers",
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
-                values: new object[] { "81a72bfa-7fe8-4b2e-826b-5dd3b389a300", 0, "65eea21f-8616-41ec-9f0d-4608bdfafa51", "admin@tresorelle.com", true, false, null, "ADMIN@TRESORELLE.COM", "ADMIN", "AQAAAAEAACcQAAAAEELwuyP61blSdZO7aZ8c2/rOJDeoiESOphS4yH0fmzd/c4lRqodhB7SP6Qwdx32tGw==", null, false, "42529914-a0b2-4274-a1cc-29bffd6c4485", false, "Admin" });
+                values: new object[] { "17b87160-4fa4-46e2-b97c-bd0c64bc24b9", 0, "3d5ee087-a462-4592-82fe-e5c8be6fd936", "admin@tresorelle.com", true, false, null, "ADMIN@TRESORELLE.COM", "ADMIN", "AQAAAAEAACcQAAAAEIMSdZGVJdiMyyuEg5BGmQ2j9TA9mUTa5d3MM2m1TOy7vYqwHh/VU5Bm6YKll9vqTw==", null, false, "52337ee2-28c4-40fc-b535-055fa32d88be", false, "Admin" });
 
             migrationBuilder.InsertData(
                 table: "Produto",
@@ -350,17 +350,17 @@ namespace TreSorelle.Migrations
             migrationBuilder.InsertData(
                 table: "AspNetUserRoles",
                 columns: new[] { "RoleId", "UserId" },
-                values: new object[] { "80be11d5-c31c-4f7c-b3a7-cc2b5d2cbb0e", "81a72bfa-7fe8-4b2e-826b-5dd3b389a300" });
+                values: new object[] { "5b95f310-4081-4ba3-ba0c-049fc13d65d7", "17b87160-4fa4-46e2-b97c-bd0c64bc24b9" });
 
             migrationBuilder.InsertData(
                 table: "AspNetUserRoles",
                 columns: new[] { "RoleId", "UserId" },
-                values: new object[] { "fe2ef608-8f5e-42fd-9a6f-6669c607692c", "81a72bfa-7fe8-4b2e-826b-5dd3b389a300" });
+                values: new object[] { "be5dea55-8b9c-4d77-93fd-2f6441cbec2b", "17b87160-4fa4-46e2-b97c-bd0c64bc24b9" });
 
             migrationBuilder.InsertData(
                 table: "Usuario",
                 columns: new[] { "UsuarioId", "DataNascimento", "Foto", "Nome" },
-                values: new object[] { "81a72bfa-7fe8-4b2e-826b-5dd3b389a300", new DateTime(2005, 8, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), "/images/usuarios/avatar.png", "Maria Luiza Gonçalves da Silva" });
+                values: new object[] { "17b87160-4fa4-46e2-b97c-bd0c64bc24b9", new DateTime(2005, 8, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), "/assets/img/usuarios/avatar.png", "Maria Luiza Gonçalves da Silva" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",

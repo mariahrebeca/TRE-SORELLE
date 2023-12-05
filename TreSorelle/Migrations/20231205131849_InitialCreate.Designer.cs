@@ -11,8 +11,8 @@ using TreSorelle.Data;
 namespace TreSorelle.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20231117140910_criar-banco")]
-    partial class criarbanco
+    [Migration("20231205131849_InitialCreate")]
+    partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -49,15 +49,15 @@ namespace TreSorelle.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "fe2ef608-8f5e-42fd-9a6f-6669c607692c",
-                            ConcurrencyStamp = "78156905-93ef-4fdc-a475-b5134dd47113",
+                            Id = "be5dea55-8b9c-4d77-93fd-2f6441cbec2b",
+                            ConcurrencyStamp = "68b38ac5-0f99-45cc-a513-b31163ce140f",
                             Name = "Administrador",
                             NormalizedName = "ADMINISTRADOR"
                         },
                         new
                         {
-                            Id = "80be11d5-c31c-4f7c-b3a7-cc2b5d2cbb0e",
-                            ConcurrencyStamp = "d191b415-6cbe-4311-a08c-50136727319e",
+                            Id = "5b95f310-4081-4ba3-ba0c-049fc13d65d7",
+                            ConcurrencyStamp = "1c9d9279-954f-48ce-ba09-dc1824e33567",
                             Name = "Cliente",
                             NormalizedName = "CLIENTE"
                         });
@@ -152,17 +152,17 @@ namespace TreSorelle.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "81a72bfa-7fe8-4b2e-826b-5dd3b389a300",
+                            Id = "17b87160-4fa4-46e2-b97c-bd0c64bc24b9",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "65eea21f-8616-41ec-9f0d-4608bdfafa51",
+                            ConcurrencyStamp = "3d5ee087-a462-4592-82fe-e5c8be6fd936",
                             Email = "admin@tresorelle.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@TRESORELLE.COM",
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAEAACcQAAAAEELwuyP61blSdZO7aZ8c2/rOJDeoiESOphS4yH0fmzd/c4lRqodhB7SP6Qwdx32tGw==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEIMSdZGVJdiMyyuEg5BGmQ2j9TA9mUTa5d3MM2m1TOy7vYqwHh/VU5Bm6YKll9vqTw==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "42529914-a0b2-4274-a1cc-29bffd6c4485",
+                            SecurityStamp = "52337ee2-28c4-40fc-b535-055fa32d88be",
                             TwoFactorEnabled = false,
                             UserName = "Admin"
                         });
@@ -230,13 +230,13 @@ namespace TreSorelle.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "81a72bfa-7fe8-4b2e-826b-5dd3b389a300",
-                            RoleId = "fe2ef608-8f5e-42fd-9a6f-6669c607692c"
+                            UserId = "17b87160-4fa4-46e2-b97c-bd0c64bc24b9",
+                            RoleId = "be5dea55-8b9c-4d77-93fd-2f6441cbec2b"
                         },
                         new
                         {
-                            UserId = "81a72bfa-7fe8-4b2e-826b-5dd3b389a300",
-                            RoleId = "80be11d5-c31c-4f7c-b3a7-cc2b5d2cbb0e"
+                            UserId = "17b87160-4fa4-46e2-b97c-bd0c64bc24b9",
+                            RoleId = "5b95f310-4081-4ba3-ba0c-049fc13d65d7"
                         });
                 });
 
@@ -669,9 +669,9 @@ namespace TreSorelle.Migrations
                     b.HasData(
                         new
                         {
-                            UsuarioId = "81a72bfa-7fe8-4b2e-826b-5dd3b389a300",
+                            UsuarioId = "17b87160-4fa4-46e2-b97c-bd0c64bc24b9",
                             DataNascimento = new DateTime(2005, 8, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Foto = "/images/usuarios/avatar.png",
+                            Foto = "/assets/img/usuarios/avatar.png",
                             Nome = "Maria Luiza Gonçalves da Silva"
                         });
                 });
